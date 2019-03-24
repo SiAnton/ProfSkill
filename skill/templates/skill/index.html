@@ -1,0 +1,406 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ProfSkill</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css'%}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+
+	<link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+
+	<!-- Modernizr JS -->
+	<script src=" {% static 'js/modernizr-2.6.2.min.js'%}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src=" {% static 'js/respond.min.js'%}"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div class="box-wrap">
+		<header role="banner" id="fh5co-header">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="fh5co-navbar-brand">
+								<a class="fh5co-logo" href="{% url "index" %}"><img width="200" src="{% static 'images/mainlogo.png'%}" alt="Closest Logo"></a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<ul class="nav text-center">
+								<li class="active"><a href="{% url "index" %}"><span>ProfSkill</span></a></li>
+								<li><a href="{% url "inside" %}">О нас</a></li>
+								<li><a href="{% url "service" %}">Услуги</a></li>
+								<li><a href="{% url "contact" %}">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul class="social">
+								<li><a href="https://twitter.com/"><i class="icon-twitter"></i></a></li>
+								<li><a href="https://www.facebook.com/"><i class="icon-facebook"></i></a></li>
+								<li><a href="https://www.instagram.com/"><i class="icon-instagram"></i></a></li>
+								<li><a href="https://www.vk.com/"><i class="icon-vk"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+		  </div>
+		</header>
+		<!-- END: header -->
+		
+		<section id="home">
+            <div id="bgimage" class="header-image">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-5 col-xs-12">
+                            <div class="iphone center-content wow fadeInLeft" data-wow-duration="1s">
+                                <img width = "320"  class="translate-telephone" src="{% static 'images/iphone.png'%}" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-7 col-xs-12 heading-text">
+                            <div class="single_home_content wow zoomIn" data-wow-duration="1s">
+								<h1>Мобильное приложение от команды ProfSkill</h1>
+								<p class="bannerDescription">Установите приложение для быстрого старта заказа или предоставления услуги.</p>
+								<div class="button">
+									<a href="#vdownloadApps" class="btn btn-primary" id="download">Скачать приложение</a>
+									<a href="#video_icon" class="btn btn-primary" id="watch-video"><i class="fa fa-play"></i> Посмотреть видео</a>
+								</div>
+							</div>
+                        </div>
+
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+
+                <div class="scrolldown">
+                    <a href="#works_2" class="scroll_btn"></a>
+                </div>
+
+            </div>
+
+        </section>
+		
+		
+		
+		
+		
+		
+		
+		
+		<section id="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+						<div class="intro animate-box">
+							<h2>ProfSkill - объединяя заказчиков и исполнителей</h2>
+						</div>
+					</div>
+				</div>
+			<div>
+		</section>
+
+		<section id="work">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="fh5co-grid animate-box" style="background-image:url( {% static 'images/01.jpg'%});">
+							<a class="image-popup text-center" href="#">
+								<div class="work-title">
+									<h3>Автомеханик Сергей, опыт работы 6 лет</h3>
+									<span>Illustration, Print</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="fh5co-grid animate-box" style="background-image: url({% static 'images/02.jpg'%});">
+							<a class="image-popup text-center" href="#">
+								<div class="work-title">
+									<h3>Front-end Программист Владимир, опыт разрабоки 3 года.</h3>
+									<span>Illustration, Print</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="fh5co-grid animate-box" style="background-image: url({% static 'images/04.jpg'%});">
+							<a class="image-popup text-center" href="#">
+								<div class="work-title">
+									<h3>Электрик Михаил, опыт работы 1 год.</h3>
+									<span>Illustration, Print</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="fh5co-grid animate-box" style="background-image: url({% static 'images/05.jpg'%});">
+							<a class="image-popup text-center" href="#">
+								<div class="work-title">
+									<h3>Повар Евгений, опыт работы 2 года.</h3>
+									<span>Illustration, Print</span>
+								</div>
+							</a>
+						</div>
+					</div>
+<!--
+					<div class="col-md-12">
+						<div class="fh5co-grid animate-box" style="background-image: url(images/work-3.jpg);">
+							<a class="image-popup text-center" href="#">
+								<div class="work-title">
+									<h3>Ampersand</h3>
+									<span>Illustration, Print</span>
+								</div>
+							</a>
+						</div>
+					</div>
+-->
+				</div>
+			<div>
+		</section>
+		
+		<section id="video_icon">
+            <div class="video_overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="video_text center-content">
+                                <a href="http://www.youtube.com" class="youtube-media">
+								<img width="40" src="{% static 'images/play.png'%}" alt="" />
+								</a>
+                                <h5>Просмотр видео ролика</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </section>
+		
+		<br>
+		<br>
+		
+		
+		<section id="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+						<div class="intro animate-box">
+							<h1>Услуги</h1>
+							<h2>Данный сервис представляет большое количество услуг от проверенных и опытных исполнителей. </h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section id="services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-laptop"></i>
+							</div>
+							<h2>IT</h2>
+							<p>Мы предоставляем комплексные услуги разработки, установки и продвижения ПО. Ремонт техники. </p>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-cogs"></i>
+							</div>
+							<h2>Ремонт бытовой и цифровой техники</h2>
+							<p>Не оставим Ваш дом или офис без электричества.</p>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-thumbs-up"></i>
+							</div>
+							<h2>Уборка</h2>
+							<p>Мы предоставляем услуги от помывки балконов и окон до полной чистки Вашего дома или офиса. </p>
+						</div>
+					</div>
+
+					<div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-puzzle-piece"></i>
+							</div>
+							<h2>Творчество</h2>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-dashboard"></i>
+							</div>
+							<h2>Ремонт транспорта</h2>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-superscript"></i>
+							</div>
+							<h2>Образование</h2>
+						</div>
+					</div>
+
+
+                    <div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-truck"></i>
+							</div>
+							<h2>Грузоперевозки</h2>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-star"></i>
+							</div>
+							<h2>Красота и здоровье</h2>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-group"></i>
+							</div>
+							<h2>Мероприятия</h2>
+						</div>
+					</div>
+
+                    <div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-briefcase"></i>
+							</div>
+							<h2>Юридические услуги</h2>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-home"></i>
+							</div>
+							<h2>Ремонт и строительство</h2>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="service">
+							<div class="service-icon">
+								<i class="icon-plane"></i>
+							</div>
+							<h2>Курьерские услуги</h2>
+						</div>
+					</div>
+                <div class="button" align="center">
+                    <a href="{% url "service" %}" class="btn btn-primary" id="download">Найти услугу
+                    </a>
+			    </div>
+                </div>
+            </div>
+		</section>
+		
+		
+		
+		<section id="vdownloadApps">
+            <div class="container">
+                <div class="row">
+                    <div class="download_heading_text center-content">
+                        <h1>Скачать App</h1>
+                        <p>Для работы с сервисом, пожалуйста скачайте наше приложение в соответствии с опреационной системой мобильного телефона.</p>
+
+                        <div class="down_text_des wow fadeInUp" data-wow-duration="1.5s">
+                            <a href=""><img src="{% static 'images/d1.png'%}" alt="" /></a>
+                            <a href=""><img src="{% static 'images/d2.png'%}" alt="" /></a>
+                            <a href=""><img src="{% static 'images/d3.png'%}" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+
+		<footer id="footer" role="contentinfo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center ">
+						<div class="footer-widget border">
+							<p class="pull-left"><small>&copy; All Rights Reserved.</small></p>
+							<p class="pull-right"><small> Designed by  Pakhomova Kristina</a>  Images: <a href="https://unsplash.com/">Unsplash</a></small></p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- END: box-wrap -->
+	
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js'%}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js'%}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js'%}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js'%}"></script>
+	
+	<script src="{% static 'js/wow/wow.min.js'%}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static 'js/main.js'%}"></script>
+	
+	<script type="text/javascript">
+	$(function(){
+        $("a[href^='#v']").click(function(){
+                var _href = $(this).attr("href");
+                $("html, body").animate({scrollTop: $(_href).offset().top+"px"}, {duration: 1500});
+                return false;
+        });
+	});
+	</script>
+
+	</body>
+</html>
+

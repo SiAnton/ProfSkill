@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ProfSkill</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="{% static 'css/table.css'%}">
+
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css'%}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+
+	<link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js'%}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'js/respond.min.js'%}"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div class="box-wrap">
+		<header role="banner" id="fh5co-header">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="fh5co-navbar-brand">
+								<a class="fh5co-logo" href="{% url "index" %}"><img width="200" src="{% static 'images/mainlogo.png'%}" alt="Closest Logo"></a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<ul class="nav text-center">
+								<li><a href="{% url "index" %}"><span>ProfSkill</span></a></li>
+								<li><a href="{% url "inside" %}">О нас</a></li>
+								<li class="active"><a href="{% url "service" %}">Услуги</a></li>
+								<li><a href="{% url "contact" %}">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul class="social">
+								<li><a href="https://twitter.com/"><i class="icon-twitter"></i></a></li>
+								<li><a href="https://www.facebook.com/"><i class="icon-facebook"></i></a></li>
+								<li><a href="https://www.instagram.com/"><i class="icon-instagram"></i></a></li>
+                                <li><a href="https://www.vk.com/"><i class="icon-vk"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+		  </div>
+		</header>
+		<!-- END: header -->
+		<section id="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+						<div class="intro animate-box">
+							<h1>Услуги</h1>
+							<h2>Данный сервис представляет большое количество услуг от проверенных и опытных исполнителей. </h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <section>
+            <div class="container">
+				<div class="col-md-8 col-md-offset-2 animate-box">
+                    <div class="form-group row">
+                        <div class="col-md-6 field">
+                            <label for="firstname">Выберете категорию</label>
+                                <form method="post">
+                                {% csrf_token %}
+                                    <select id="category" name="categorylst" required >
+                                    {% for l in listcat %}
+                                        <option name="list" value="{{ l.id }}" selected>{{ l.namecategory }}</option>
+                                    {% endfor %}
+                                </select>
+
+								<label for="lastname">Опыт работы</label>
+								<input type="range" min="0" max="40" class="form-control">
+
+                            <input type="submit" value="Select">
+                            </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+<br>
+    <br>
+
+
+        <section>
+            <table align="center">
+                <tr><th>№</th><th>Фото</th><th>Имя</th><th>Фамилия</th><th>Область услуг</th><th>Опыт</th><th>
+                {% for s in servic %}
+                        <tr><td>{{ s.id }}</td><td><img width="50" src="{{ s.photo.url }}"></td><td>{{ s.name }}</td><td>{{ s.fname }}</td><td>{{ s.workArea.namecategory }}</td><td>{{ s.skill }}</td><td>
+                {% endfor %}
+            </table>
+        </section>
+
+
+        <br>
+        <br>
+
+	
+
+		<footer id="footer" role="contentinfo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="footer-widget border">
+							<p class="pull-left"><small>&copy; All Rights Reserved.</small></p>
+							<p class="pull-right"><small> Designed by  Pakhomova Kristina</a>  Images: <a href="https://unsplash.com/">Unsplash</a></small></p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- END: box-wrap -->
+	
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js'%}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js'%}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js'%}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js'%}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static 'js/main.js'%}"></script>
+
+	</body>
+</html>
+
