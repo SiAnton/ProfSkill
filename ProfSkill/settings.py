@@ -81,6 +81,8 @@ DATABASES = {
     }
 }
 
+
+
 # отправка на почту
 
 EMAIL_HOST = 'smtp.yandex.ru'

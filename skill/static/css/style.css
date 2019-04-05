@@ -1,3 +1,5 @@
+{% load static %}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -116,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-header .nav li {
   font-size: 20px;
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 19px;
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .nav li {
@@ -513,6 +515,65 @@ footer .social {
 }
 
 
+/* Clients Logo Section */
+
+.client_heading_text{
+	padding:70px 0px;
+	text-align:center;
+	margin-left: -20px;
+}
+.client_heading_text a{
+    margin-right: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Dialog Section */
+.dialog_1{
+  position: fixed;
+  top: 600px;
+  right: 50px;
+  z-index: 100;
+  border: 1px solid #52d3aa;
+  text-align: center;
+  width: 350px;
+  height: 120px;
+  box-shadow: 0 0 4px 2px gray;
+  transition: 0.2s;
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 30px 0px;
+  background: rgba(238, 239, 240, 0.8);
+  border-radius: 5px;
+}
+
+.dialog_1:hover{
+  box-shadow: 0 0 10px 2px gray;
+}
+
+.count_1{
+  font-size: 35px;
+  display: inline-block;
+  color: #52d3aa;
+  font-weight: bold;
+
+}
+
+.close_1{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  padding: -6px -6px;
+  font-size: 21px;
+}
+
+.close_1:hover{
+  cursor: pointer;
+}
+
 /* Download Apps Section */
 #downloadApps{
 	
@@ -532,4 +593,67 @@ footer .social {
 .center-content {
     text-align: center;
 }
+
+/* Table Section */
+
+.main-table{
+  width: 900px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+.main-table tr td {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #52d3aa;;
+  height: 80px;
+  background: rgba(211,211,211, 0.1);
+}
+
+.main-table tr td:first-child,
+.main-table tr td:nth-child(2){
+  padding-left: 10px;
+  text-align: left;
+}
+
+.main-table tr td:first-child{
+  border-right: 30px;
+}
+
+.main-table tr td:nth-child(3){
+  border-right: 0px;
+  border-left: 0px;
+}
+
+.main-table tr td:first-child{
+  border-top-left-radius: 10px;
+}
+
+.main-table tr td:first-child{
+  border-bottom-left-radius: 10px;
+}
+
+.main-table tr td:last-child{
+  border-top-right-radius: 10px;
+}
+
+.main-table tr td:last-child{
+  border-bottom-right-radius: 10px;
+}
+
+.main-table tr{
+  border-radius: 10px;
+  box-shadow: 0 6px 4px 1px gray;
+  transition: 0.4s;
+}
+
+.main-table tr:hover{
+  transform: translateY(10px);
+  box-shadow: 0 2px 4px 1px gray;
+   background: rgba(211,211,211, 0.1);
+}
+
 /*# sourceMappingURL=style.css.map */
+
+

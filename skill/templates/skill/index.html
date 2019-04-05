@@ -39,7 +39,6 @@
 
 	<link rel="stylesheet" href="{% static 'css/style.css'%}">
 
-
 	<!-- Modernizr JS -->
 	<script src=" {% static 'js/modernizr-2.6.2.min.js'%}"></script>
 	<!-- FOR IE9 below -->
@@ -49,6 +48,24 @@
 
 	</head>
 	<body>
+
+
+    <div class="dialog_1">
+         <span class="close_1">
+            &#215;
+        </span>
+        <p>
+    На сегоднешний день задания
+            <br>
+            <span class="count_1">
+                {{ count }}
+            </span>
+        </p>
+
+    </div>
+
+
+
 	<div class="box-wrap">
 		<header role="banner" id="fh5co-header">
 			<div class="container">
@@ -63,7 +80,8 @@
 							<ul class="nav text-center">
 								<li class="active"><a href="{% url "index" %}"><span>ProfSkill</span></a></li>
 								<li><a href="{% url "inside" %}">О нас</a></li>
-								<li><a href="{% url "service" %}">Услуги</a></li>
+                                <li><a href="{% url "blog" %}">Блог</a></li>
+								<li><a href="{% url "service" %}">Задания</a></li>
 								<li><a href="{% url "contact" %}">Контакты</a></li>
 							</ul>
 						</div>
@@ -340,6 +358,44 @@
                 </div>
             </div>
 		</section>
+
+        <!-- Clients logo Section  -->
+        <h1 class="center-content">Наши партнеры</h1>
+        <section id="carousel" class="carousel slide" data-ride="carousel" style="background:#ddd;">
+            <div class="container">
+                <div class="row ">
+                        <br>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner center-content client_heading_text">
+                            <div class="item active">
+                                <a href=""><img src=" {% static 'images/c1.png'%}" alt="" /></a>
+                                <a href=""><img src=" {% static 'images/c2.png'%}" alt="" /></a>
+                            </div>
+                            <div class="item">
+                                <a href=""><img src=" {% static 'images/c3.png'%}" alt="" /></a>
+                                <a href=""><img src=" {% static 'images/c4.png'%}" alt="" /></a>
+                            </div>
+                            <div class="item">
+                                <a href=""><img src=" {% static 'images/c5.png'%}" alt="" /></a>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Предыдущий</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Следующий</span>
+                        </a>
+                    </div>
+            </div>
+        </section>
+
+
 		
 		
 		
@@ -388,6 +444,7 @@
 	
 	<script src="{% static 'js/wow/wow.min.js'%}"></script>
 
+
 	<!-- Main JS (Do not remove) -->
 	<script src="{% static 'js/main.js'%}"></script>
 	
@@ -400,6 +457,14 @@
         });
 	});
 	</script>
+
+    <script>
+        var btnclose = document.getElementsByClassName("close_1")[0];
+        var btnwindow = document.getElementsByClassName("dialog_1")[0];
+        btnclose.addEventListener("click",function () {
+            btnwindow.style.visibility = "hidden";
+        });
+    </script>
 
 	</body>
 </html>
