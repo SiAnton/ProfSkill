@@ -1,1 +1,1 @@
-web: gunicorn skill.wsgi 
+web: gunicorn ProfSkill.wsgi 
