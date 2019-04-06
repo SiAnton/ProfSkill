@@ -23,13 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'p#=0nka^p0%mfwn)0n48kvur4ygp0%02219nth(p$_r6*uvp_)'
+SECRET_KEY = 'p#=0nka^p0%mfwn)0n48kvur4ygp0%02219nth(p$_r6*uvp_)'
 #SECRET_KEY = os.environ['SECRET_KEY']
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'p#=0nka^p0%mfwn)0n48kvur4ygp0%02219nth(p$_r6*uvp_)')
+#SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'p#=0nka^p0%mfwn)0n48kvur4ygp0%02219nth(p$_r6*uvp_)')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
+DEBUG = False
+#DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
 ALLOWED_HOSTS = ['*']
 
@@ -54,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'ProfSkill.urls'
