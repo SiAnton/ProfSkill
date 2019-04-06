@@ -8,7 +8,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-        path('', views.index, name ="index"),
+        path('/skill', views.index, name ="index"),
         path('contact/', views.contact, name="contact"),
         path('inside/', views.inside_view, name="inside"),
         path('service/', views.service, name="service"),
