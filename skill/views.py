@@ -27,7 +27,7 @@ def index(request):
     task_count =db.child("Tasks").get()
 
     count = len(task_count.each())
-    return render(request, "/index.html", {'count':count})
+    return render(request, "index.html", {'count':count})
 
 
 def inside_view(request):
