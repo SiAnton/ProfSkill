@@ -8,10 +8,10 @@ from django.conf import settings
 
 
 urlpatterns = [
-        path('/', views.index, name ="index"),
-        path('contact/', views.contact, name="contact"),
-        path('inside/', views.inside_view, name="inside"),
-        path('service/', views.service, name="service"),
-        path('blog/', views.blog_view, name="blog"),
+        # path('', views.index, name ="index"),
+        # path('contact/', views.contact, name="contact"),
+        # path('inside/', views.inside_view, name="inside"),
+        # path('service/', views.service, name="service"),
+        # path('blog/', views.blog_view, name="blog"),
 ]
 
