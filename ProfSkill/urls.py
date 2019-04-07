@@ -24,9 +24,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # url('skill/', include('skill.urls')),
     path('', views.index, name ="index"),
-    #path('contact/', views.contact, name="contact"),
-    #path('inside/', views.inside_view, name="inside"),
-    #path('service/', views.service, name="service"),
-    #path('blog/', views.blog_view, name="blog"),
+    path('contact/', views.contact, name="contact"),
+    path('inside/', views.inside_view, name="inside"),
+    path('service/', views.service, name="service"),
+    path('blog/', views.blog_view, name="blog"),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
