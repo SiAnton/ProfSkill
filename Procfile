@@ -1,1 +1,1 @@
-web: gunicorn ProfSkill.wsgi 
+web: gunicorn ProfSkill.wsgi --log-file -
