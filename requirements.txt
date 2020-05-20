@@ -31,7 +31,7 @@ gensim==3.0.1
 get==1.0.3
 googleapis-common-protos==1.5.9
 graphviz==0.8.3
-httplib2==0.12.1
+httplib2==0.18.0
 idna==2.6
 idna-ssl==1.1.0
 imagesize==1.0.0
