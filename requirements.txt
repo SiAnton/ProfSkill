@@ -3,7 +3,7 @@ gunicorn==19.9.0
 kiwisolver==1.0.1
 whitenoise==4.1.2
 ace==0.3.post1
-aiohttp==2.3.10
+aiohttp==3.7.4
 alabaster==0.7.10
 async-timeout==2.0.1
 attrs==17.4.0
