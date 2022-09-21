@@ -67,7 +67,7 @@ pyparsing==2.2.0
 Pyrebase==3.0.27
 pytest==3.5.0
 python-dateutil==2.6.1
-python-jwt==2.0.1
+python-jwt==3.3.4
 python-memcached==1.59
 pytils==0.3
 pytz==2017.2
